@@ -69,7 +69,7 @@ public class FindMax {
         obj.insertbeginning(10);
         obj.insertbeginning(30);
         obj.insertbeginning(20);
-        obj.insertbeginning(40);git
+        obj.insertbeginning(40);
         System.out.println(obj.Max());
     }
 
