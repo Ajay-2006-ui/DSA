@@ -18,7 +18,7 @@ public class Platform {
          int i=1;
          int j=-0;
 
-                  while(i<n&j<n){
+                  while(i<n&&j<n){
                  if(arrival[i]<=departure[j]){
                      platforms++;
                      i++;
