@@ -1,7 +1,8 @@
 public class BitManipulation {
     void OddorEven(int n) {
         if ((n & 1) == 0) {
-            System.out.println("even number");
+            System.out.println("even number"); // if a number is even then lastbit is 0 and if lastbit is 1 it is odd so when we
+                                               // use & opertaor it checks last bit and if it is even the last bit will come 0 if not then for odd 1
         } else {
             System.out.println("odd number");
         }

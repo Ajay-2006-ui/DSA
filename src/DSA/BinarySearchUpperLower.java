@@ -2,7 +2,7 @@ package DSA;
 public class BinarySearchUpperLower {
     int lowerbound(int[] arr, int key ){
         int left = 0;
-        int right = arr.length;
+        int right = arr.length-1;
         int ans=arr.length;
         while (left < right) {
             int mid = left + (right - left) / 2;

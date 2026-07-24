@@ -13,7 +13,8 @@ public class BankAccount {
 
         }
         double getBalance(){
-        return this.balance;
+
+        return balance;
     }
     void display(){
         System.out.println(accountHolder);
