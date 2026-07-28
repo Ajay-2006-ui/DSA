@@ -7,7 +7,7 @@ public class TreeHeight {
         }
         int left=height(root.left);
         int right=height(root.right);
-        return 1+ Math.max(left,right)+1;
+        return 1+ Math.max(left,right);
     }
     public static void main(String[] args) {
         Node root = new Node(10);
