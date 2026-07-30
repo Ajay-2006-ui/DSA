@@ -20,7 +20,7 @@ public class Anagram {
         String t="listen";
         String s= "siloooont";
         Anagram a= new Anagram();
-       System.out.print(a.anagram(t,s));
+       System.out.println(a.anagram(t,s));
        System.out.println("worked sucessfully");
 
     }
