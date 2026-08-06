@@ -16,7 +16,7 @@ public class Platform {
          int Maxplatforms=1;
 
          int i=1;
-         int j=-0;
+         int j=0;
 
                   while(i<n&&j<n){
                  if(arrival[i]<=departure[j]){

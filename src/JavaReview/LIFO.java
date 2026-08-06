@@ -23,7 +23,7 @@ public class LIFO {
         if(top==-1){
             System.out.println("the stack is empty");
         }
-        System.out.println("The top element is:" + stack[top-1]);
+        System.out.println("The top element is:" + stack[top]);
     }
     boolean isEmpty(){
         if(top==-1){

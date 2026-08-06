@@ -1,22 +1,38 @@
 package DSA;
-import java.util.HashMap;
+import java.util.HashSet;
 
 public class ConsecutiveLength {
-    public static <Hashmap> void main(String[] args) {
-        int []arr={10};
-        int count=0;
-        HashMap<Integer,Integer>st=new HashMap<>();
-        for(int i=0;i<arr.length;i++) {
-            st.put(arr[i], i);
+    public static void main(String[] args) {
+
+        int[] arr = {100, 4, 200, 1, 3, 2};
+
+        HashSet<Integer> set = new HashSet<>();
+
+        // Store all elements in HashSet
+        for (int num : arr) {
+            set.add(num);
         }
 
-        for(int i=0;i<arr.length;i++) {
-            int need=arr[i]+1;
-            if(st.containsKey(need)) {
-                count++;
+        int maxLength = 0;
+
+        // Check every number
+        for (int num : arr) {
+
+            // Start only if it is the beginning of a sequence
+            if (!set.contains(num - 1)) {
+
+                int currentNum = num;
+                int currentLength = 1;
+
+                while (set.contains(currentNum + 1)) {
+                    currentNum++;
+                    currentLength++;
+                }
+
+                maxLength = Math.max(maxLength, currentLength);
             }
         }
-        System.out.println(count+1);
 
+        System.out.println(maxLength);
     }
 }

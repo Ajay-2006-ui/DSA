@@ -25,7 +25,7 @@ public class CalculatorCatchThrowException {
     }
     public static void main(String[] args) {
         CalculatorCatchThrowException ec=new CalculatorCatchThrowException();
-        ec.divide(10,0);
+        ec.divide(10,-7);
     }
 }
 

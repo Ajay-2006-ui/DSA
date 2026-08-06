@@ -5,7 +5,6 @@ public class CommonElements {
     public static void main(String[] args) {
         int[] arr1 = {4, 2, 7, 9, 2, 5, 1};
         int[] arr2 = {8, 7, 4, 4, 3, 1, 10};
-        int[] arr3 = new int[arr1.length];
         HashSet<Integer> set2 = new HashSet<>();
         HashSet<Integer> set3 = new HashSet<>();
         for (int num : arr2) {
