@@ -1,32 +1,43 @@
 package programming;
 
 public class VariableWindow {
-        public static void main(String[] args) {
 
-            int[] arr = {1, 2, 1, 0, 1, 1, 0};
-            int k = 4;
+    public static void main(String[] args) {
 
-            int left = 0;
-            int sum = 0;
-            int maxLen = 0;
+        int[] arr = {1, 2, 1, 0, 1, 1, 0};
+        int k = 4;
 
-            for (int right = 0; right < arr.length; right++) {
+        int left = 0;
+        int sum = 0;
+        int maxLen = 0;
 
-                sum += arr[right];
+        int start = 0;
+        int end = 0;
 
-                while (sum > k) {
-                    sum -= arr[left];
-                    left++;
-                }
+        for (int right = 0; right < arr.length; right++) {
 
-                int len = right - left + 1;
+            sum += arr[right];
 
-                if (len > maxLen) {
-                    maxLen = len;
-                }
+            while (sum > k) {
+                sum -= arr[left];
+                left++;
             }
 
-            System.out.println(maxLen);
+            int len = right - left + 1;
+
+            if (len > maxLen) {
+                maxLen = len;
+                start = left;
+                end = right;
+            }
+        }
+
+        System.out.println("Maximum Length = " + maxLen);
+
+        System.out.print("Subarray = ");
+
+        for (int i = start; i <= end; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
-
+}
