@@ -119,7 +119,7 @@ public class BSTDeletion {
 
         public static void main(String[] args) {
 
-            Node root = null;
+            Node root =null;
 
             // INSERT VALUES
             root = insert(root, 10);
