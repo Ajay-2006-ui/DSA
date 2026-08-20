@@ -1,6 +1,6 @@
 package DSA;
 
-public class LCA {
+public class    LCA {
     static Node LowestCommonAncestor(Node root,int p,int q){
         if(root==null){
             return  null;
